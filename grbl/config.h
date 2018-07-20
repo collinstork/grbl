@@ -167,7 +167,7 @@
 // Enables a second coolant control pin via the mist coolant g-code command M7 on the Arduino Uno
 // analog pin 4. Only use this option if you require a second coolant control pin.
 // NOTE: The M8 flood coolant control pin on analog pin 3 will still be functional regardless.
-// #define ENABLE_M7 // Disabled by default. Uncomment to enable.
+#define ENABLE_M7 // Disabled by default. Uncomment to enable.
 
 // This option causes the feed hold input to act as a safety door switch. A safety door, when triggered,
 // immediately forces a feed hold and then safely de-energizes the machine. Resuming is blocked until
@@ -366,7 +366,7 @@
 // input. However, in some use cases, user may want the enable pin to disable with a zero spindle speed and 
 // re-enable when spindle speed is greater than zero. This option does that.
 // NOTE: Requires USE_SPINDLE_DIR_AS_ENABLE_PIN to be enabled.
-// #define SPINDLE_ENABLE_OFF_WITH_ZERO_SPEED // Default disabled. Uncomment to enable.
+ #define SPINDLE_ENABLE_OFF_WITH_ZERO_SPEED // Default disabled. Uncomment to enable.
 
 // With this enabled, Grbl sends back an echo of the line it has received, which has been pre-parsed (spaces
 // removed, capitalized letters, no comments) and is to be immediately executed by Grbl. Echoes will not be
